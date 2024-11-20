@@ -1,0 +1,12 @@
+.menu {
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.menu__link {
+  font-size: 20px;
+  line-height: 1;
+  color: $text-color-accent;
+  text-decoration: none;
+}

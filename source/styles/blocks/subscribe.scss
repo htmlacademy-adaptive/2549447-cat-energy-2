@@ -1,0 +1,14 @@
+.subscribe {
+  font-family: $font-secondary;
+  color: $text-color-accent;
+}
+
+.subscribe__title {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.subscribe__text {
+  font-size: 16px;
+  line-height: calc(24/16);
+}

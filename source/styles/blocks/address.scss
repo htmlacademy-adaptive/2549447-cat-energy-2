@@ -1,0 +1,11 @@
+.address__title {
+  font-size: 16px;
+  line-height: calc(20/16);
+  text-transform: uppercase;
+  color: $text-color-accent-2;
+}
+
+.address__text {
+  line-height: calc(20/14);
+  color: $text-color-base;
+}

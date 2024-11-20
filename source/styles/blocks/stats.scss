@@ -1,0 +1,45 @@
+.stats {
+  background-color: $color-bg-secondary;
+}
+
+.stats__title {
+  font-size: 36px;
+  line-height: calc(40/36);
+  color: $text-color-accent;
+}
+
+.stats__term {
+  font-size: 12px;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+.stats__number {
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $text-color-accent;
+}
+
+.stats__item--up {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: calc(20/14);
+  text-transform: uppercase;
+  color: $text-color-accent;
+}
+
+.stats__term--up {
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+
+.stats__number--up {
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  color: inherit;
+}

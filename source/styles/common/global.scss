@@ -1,1 +1,14 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: $font-primary;
+  background-color: $color-contrast-text;
+  color: $text-color-base;
+  font-size: 14px;
+  line-height: calc(18/14);
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-secondary;
+  font-weight: 400;
+}
