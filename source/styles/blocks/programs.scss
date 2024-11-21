@@ -13,6 +13,26 @@
   color: $text-color-accent;
 }
 
+.programs__title::before {
+  content: "";
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.programs__title--slim::before {
+  background-image: url("../../icons/stack.svg#icon-cat-slim");
+  background-size: 50px 53px;
+  width: 50px;
+  height: 53px;
+}
+
+.programs__title--pro::before {
+  background-image: url("../../icons/stack.svg#icon-cat-pro");
+  background-size: 68px 50px;
+  width: 68px;
+  height: 50px;
+}
+
 .programs__button {
   font-family: $font-secondary;
   font-size: 16px;
@@ -20,4 +40,16 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $text-color-accent;
+}
+
+.programs__button::after {
+  content: "";
+  background-color: $text-color-accent;
+  mask-image: url("../../icons/stack.svg#icon-arrow-right");
+  mask-repeat: no-repeat;
+  mask-size: 24px 12px;
+  width: 24px;
+  height: 12px;
+  display: block;
+  cursor: pointer;
 }

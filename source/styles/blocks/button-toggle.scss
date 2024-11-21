@@ -1,3 +1,17 @@
 .button-toggle {
-  background-color: $color-contrast-text;
+  background-color: $text-color-accent;
+  mask-image: url("../../icons/stack.svg#button-toggle");
+  mask-repeat: no-repeat;
+  mask-size: 24px 24px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.button-toggle--close {
+  mask-image: url("../../icons/stack.svg#button-cross");
+  mask-size: 18px 18px;
+  width: 18px;
+  height: 18px;
 }

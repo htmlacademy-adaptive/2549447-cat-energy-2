@@ -5,6 +5,16 @@
   color: $text-color-accent-2;
 }
 
+.card-more__title::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-plus");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
 .card-more__text {
   font-size: 12px;
   line-height: calc(16/12);

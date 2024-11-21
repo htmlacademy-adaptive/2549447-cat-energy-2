@@ -4,3 +4,15 @@
   text-decoration: none;
   color: $text-color-base;
 }
+
+.developer__link::after {
+  content: "";
+  background-color: $text-color-accent-3;
+  mask-image: url("../../icons/stack.svg#icon-htmlacademy");
+  mask-repeat: no-repeat;
+  mask-size: 27px 34px;
+  width: 27px;
+  height: 34px;
+  display: block;
+  cursor: pointer;
+}

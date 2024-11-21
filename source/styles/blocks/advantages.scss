@@ -7,3 +7,33 @@
 .advantages__list {
   list-style-type: none;
 }
+
+.advantages__description::before {
+  content: "";
+  background-color: $color-accent;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.advantages__description--benefit::before {
+  background-image: url("../../icons/stack.svg#icon-benefit");
+  background-size: 25px 28px;
+}
+
+.advantages__description--usability::before {
+  background-image: url("../../icons/stack.svg#icon-usability");
+  background-size: 26px 28px;
+}
+
+.advantages__description--change::before {
+  background-image: url("../../icons/stack.svg#icon-change");
+  background-size: 25px 30px;
+}
+
+.advantages__description--improvement::before {
+  background-image: url("../../icons/stack.svg#icon-improvement");
+  background-size: 26px 31px;
+}
