@@ -1,0 +1,15 @@
+.wrapper {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    width: calc($tablet-width - 60px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: calc($desktop-width - 220px);
+  }
+}

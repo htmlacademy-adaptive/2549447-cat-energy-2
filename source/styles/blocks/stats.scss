@@ -2,6 +2,10 @@
   background-color: $color-bg-secondary;
 }
 
+.stats__wrapper {
+  margin: 0 auto;
+}
+
 .stats__title {
   font-size: 36px;
   line-height: calc(40/36);
@@ -42,4 +46,20 @@
   line-height: inherit;
   text-transform: inherit;
   color: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .stats__title {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .stats__description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .stats__list {
+    display: flex;
+  }
 }

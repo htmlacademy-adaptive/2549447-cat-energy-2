@@ -1,7 +1,10 @@
 .page__body {
+  margin: 0;
+
   :where(h1,h2,h3) {
     font-family: $font-secondary;
     font-weight: 400;
+    margin: 0;
   }
 
   :where(picture,source) {

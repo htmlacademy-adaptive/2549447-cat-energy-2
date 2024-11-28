@@ -1,3 +1,30 @@
 .footer {
   background-color: $color-bg-primary;
 }
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.footer__logo-text {
+  align-self: center;
+}
+
+.footer__social {
+  align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    min-height: 147px;
+  }
+
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

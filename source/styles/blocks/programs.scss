@@ -1,5 +1,10 @@
 .programs__list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
   list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .programs__item {
@@ -52,4 +57,32 @@
   height: 12px;
   display: block;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 45px;
+  }
+
+  .programs__list {
+    gap: 30px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .programs__description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $text-color-accent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    gap: 80px;
+    flex-direction: row;
+  }
 }

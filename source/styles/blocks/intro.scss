@@ -1,7 +1,13 @@
 .intro {
   font-family: $font-secondary;
-  background-color: $color-accent-transparent;
+  background-image: linear-gradient($color-accent-transparent 302px, $color-contrast-text 302px);
   color: $color-contrast-text;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .intro__title {
@@ -14,4 +20,78 @@
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background-image: none;
+  }
+
+  .intro__wrapper {
+    position: relative;
+  }
+
+  .intro__title {
+    color: $text-color-accent;
+    font-size: 60px;
+    max-width: 420px;
+    margin-left: 90px;
+    margin-bottom: 40px;
+  }
+
+  .intro__slogan {
+    color: $text-color-accent;
+    font-size: 20px;
+    max-width: 420px;
+    margin: 0 auto 50px 90px;
+  }
+
+  .intro_picture {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .intro__button {
+    max-width: 244px;
+    margin-left: 90px;
+    margin-bottom: 550px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    margin-bottom: 82px;
+  }
+
+  .intro::before {
+    content: "";
+    background-image: linear-gradient(to right, $color-contrast-text 50%, $color-accent-transparent 50%);
+    display: block;
+    width: 100%;
+    height: 694px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  .intro__wrapper {
+    min-height: 550px;
+  }
+
+  .intro__title {
+    margin-top: 81px;
+  }
+
+  .intro_picture {
+    z-index: 1;
+    top: 0;
+    left: 450px;
+  }
+
+  .intro__button {
+    max-width: 244px;
+    margin-left: 90px;
+    margin-bottom: auto;
+  }
 }

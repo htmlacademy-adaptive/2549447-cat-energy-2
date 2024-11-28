@@ -1,3 +1,7 @@
+.sub-product {
+  margin: 0 auto;
+}
+
 .sub-product__title {
   font-size: 24px;
   line-height: 1;
@@ -6,4 +10,5 @@
 
 .sub-product__list {
   list-style-type: none;
+  padding: 0;
 }

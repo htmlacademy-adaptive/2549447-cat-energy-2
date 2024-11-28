@@ -10,3 +10,9 @@
   color: $text-color-accent;
   text-decoration: none;
 }
+
+@media (min-width: $desktop-width) {
+  .menu__link--accent {
+    color: $color-contrast-text;
+  }
+}

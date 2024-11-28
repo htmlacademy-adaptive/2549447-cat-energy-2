@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header wrapper">
     <a class="header__logo-image logo-image" href="index.html">
       <picture>
         <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-cat-energy-img-desktop.svg" width="70" height="59">
@@ -25,10 +25,10 @@
     <a class="header__logo-text logo-text" tabindex="-1" href="index.html">
       <img class="logo-text_picture" src="images/logo-cat-energy-text.svg" alt="Текстовый вариант логотипа Cat Energy" width="101" height="18">
     </a>
-    <nav class="navigation">
-      <button class="navigation__toggle button-toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <button class="header__toggle button-toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="navigation navigation--close">
       <ul class="navigation__list menu">
         <li class="menu__item">
           <a class="menu__link" href="index.html">Главная</a>
@@ -43,7 +43,7 @@
     </nav>
   </header>
   <main class="main">
-    <section class="catalog">
+    <section class="catalog wrapper">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item card">
@@ -221,7 +221,7 @@
         </li>
       </ul>
     </section>
-    <section class="sub-product">
+    <section class="sub-product wrapper">
       <h2 class="sub-product__title">Дополнительные товары</h2>
       <ul class="sub-product__list">
         <li class="sub-product__item sub-card">
@@ -266,11 +266,11 @@
         </li>
       </ul>
     </section>
-    <section class="promo">
+    <section class="promo wrapper">
       <h2 class="visually-hidden">Уникальные предложения</h2>
       <p class="promo__text">Закажите все и получите чехол для кота в подарок!</p>
     </section>
-    <section class="subscribe">
+    <section class="subscribe wrapper">
       <h2 class="subscribe__title">Акции и новинки</h2>
       <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscribe__form form" action="https://echo.htmlacademy.ru/" method="post">
@@ -282,8 +282,10 @@
       </form>
     </section>
     <section class="address">
-      <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="address__text">ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</p>
+      <div class="address__wrapper wrapper">
+        <h2 class="address__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <p class="address__text">ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</p>
+      </div>
       <picture>
         <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-reserve-desktop@1x.webp 1x, images/map-reserve-desktop@2x.webp 2x" width="1440" height="400">
         <source type="image/webp" media="(min-width: 768px)" srcset="images/map-reserve-tablet@1x.webp 1x, images/map-reserve-tablet@2x.webp 2x" width="768" height="400">
@@ -295,33 +297,35 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__logo-text logo-text" href="index.html">
-      <img class="logo-text_picture" src="images/logo-cat-energy-text.svg" alt="Текстовый вариант логотипа Cat Energy" width="101" height="18">
-    </a>
-    <section class="footer__social social">
-      <h2 class="visually-hidden">Давайте дружить!</h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Мы во Вконтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Мы в Ютубе</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Мы в Телеграме</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer__developer developer">
-      <h2 class="visually-hidden">Разработано в:</h2>
-      <a class="developer__link" href="https://htmlacademy.ru">HTML Academy</a>
-    </section>
+    <div class="footer__wrapper wrapper">
+      <a class="footer__logo-text logo-text" href="index.html">
+        <img class="logo-text_picture" src="images/logo-cat-energy-text.svg" alt="Текстовый вариант логотипа Cat Energy" width="101" height="18">
+      </a>
+      <section class="footer__social social">
+        <h2 class="visually-hidden">Давайте дружить!</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы во Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в Ютубе</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__developer developer">
+        <h2 class="visually-hidden">Разработано в:</h2>
+        <a class="developer__link" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
   </footer>
 </body>
 

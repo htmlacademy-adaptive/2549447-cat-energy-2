@@ -1,3 +1,38 @@
 .header {
-  //
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 65px;
+}
+
+.header__logo-image {
+  margin-right: 56px;
+}
+
+.header__toggle {
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    min-height: 100px;
+    margin-bottom: 40px;
+  }
+
+  .header__logo-image {
+    margin-right: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    min-height: 59px;
+    padding-top: 55px;
+    margin-bottom: 29px;
+  }
+
+  .header__logo-image {
+    margin-right: 14px;
+  }
 }
