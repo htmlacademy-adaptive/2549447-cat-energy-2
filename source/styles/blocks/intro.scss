@@ -1,7 +1,7 @@
 .intro {
   font-family: $font-secondary;
   background-color: $color-accent-transparent;
-  background-image: linear-gradient($color-accent-transparent 61%, $color-contrast-text 61%), image-set("../../images/intro-bg-licking-cat-mobile@1x.jpg" 1x type("image/jpg"), "../../images/intro-bg-licking-cat-mobile@2x.jpg" 2x type("image/jpg")), linear-gradient(to right, #4e4d51 50%, #414045 50%);
+  background-image: linear-gradient($color-accent-transparent 61%, $color-contrast-text 61%), image-set("../images/intro-bg-licking-cat-mobile@1x.webp" 1x type("image/webp"), "../images/intro-bg-licking-cat-mobile@2x.webp" 2x type("image/webp")), linear-gradient(to right, #4e4d51 50%, #414045 50%);
   color: $color-contrast-text;
   background-repeat: no-repeat;
   background-size: contain, 490px 302px, contain;
@@ -79,7 +79,7 @@
 
   .intro::before {
     content: "";
-    background-image: linear-gradient($color-accent-transparent, $color-accent-transparent), image-set("../../images/intro-bg-licking-cat-desktop@1x.jpg" 1x type("image/jpg"), "../../images/intro-bg-licking-cat-desktop@2x.jpg" 2x type("image/jpg")), linear-gradient(to right, #403f45, #403f45);
+    background-image: linear-gradient($color-accent-transparent, $color-accent-transparent), image-set("../images/intro-bg-licking-cat-desktop@1x.webp" 1x type("image/webp"), "../images/intro-bg-licking-cat-desktop@2x.webp" 2x type("image/webp")), linear-gradient(to right, #403f45, #403f45);
     display: block;
     width: 50%;
     height: 694px;
