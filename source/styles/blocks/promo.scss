@@ -1,5 +1,5 @@
 .promo {
-  background-image: linear-gradient($color-accent-transparent 50% 50%), image-set("../../images/bg-promo-mobile@1x.webp" 1x type("image/webp"), "../../images/bg-promo-mobile@2x.webp" 2x type("image/webp"));
+  background-image: linear-gradient($color-accent-transparent 50% 50%), image-set("../../images/bg-promo-mobile@1x.jpg" 1x type("image/jpg"), "../../images/bg-promo-mobile@2x.jpg" 2x type("image/jpg"));
   background-size: cover;
   color: $color-contrast-text;
   min-height: 290px;
@@ -32,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    background-image: linear-gradient($color-accent-transparent 50% 50%), image-set("../../images/bg-promo-tablet@1x.webp" 1x type("image/webp"), "../../images/bg-promo-tablet@2x.webp" 2x type("image/webp"));
+    background-image: linear-gradient($color-accent-transparent 50% 50%), image-set("../../images/bg-promo-tablet@1x.jpg" 1x type("image/jpg"), "../../images/bg-promo-tablet@2x.jpg" 2x type("image/jpg"));
     min-height: 200px;
     padding: 57px 125px 60px 77px;
   }
@@ -53,7 +53,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    background-image: linear-gradient($color-accent-transparent 50% 50%), image-set("../../images/bg-promo-desktop@1x.webp" 1x type("image/webp"), "../../images/bg-promo-desktop@2x.webp" 2x type("image/webp"));
+    background-image: linear-gradient($color-accent-transparent 50% 50%), image-set("../../images/bg-promo-desktop@1x.jpg" 1x type("image/jpg"), "../../images/bg-promo-desktop@2x.jpg" 2x type("image/jpg"));
     width: 245px;
     padding: 56px 42px 43px;
   }
