@@ -1,20 +1,78 @@
 .promo {
-  background-color: $color-accent-transparent;
+  background-image: linear-gradient($color-accent-transparent 50% 50%), image-set("../../images/bg-promo-mobile@1x.webp" 1x type("image/webp"), "../../images/bg-promo-mobile@2x.webp" 2x type("image/webp"));
+  background-size: cover;
   color: $color-contrast-text;
-  margin: 0 auto;
+  min-height: 290px;
+  padding-top: 59px;
+  padding-bottom: 43px;
+  box-sizing: border-box;
 }
 
 .promo__text {
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   line-height: calc(20/16);
+  margin: 0 auto;
+  align-items: center;
+  width: 161px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon-promo-gift");
+    background-size: 78px 80px;
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 80px;
+    display: block;
+    margin-bottom: 48px;
+  }
 }
 
-.promo__text::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#icon-promo-gift");
-  background-size: 78px 80px;
-  background-repeat: no-repeat;
-  width: 78px;
-  height: 80px;
-  display: block;
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: linear-gradient($color-accent-transparent 50% 50%), image-set("../../images/bg-promo-tablet@1x.webp" 1x type("image/webp"), "../../images/bg-promo-tablet@2x.webp" 2x type("image/webp"));
+    min-height: 200px;
+    padding: 57px 125px 60px 77px;
+  }
+
+  .promo__text {
+    display: grid;
+    grid-template-columns: 1fr 161px;
+    margin: 0;
+    text-align: start;
+    width: 100%;
+
+    &::before {
+      margin: 0;
+      margin-right: 264px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: linear-gradient($color-accent-transparent 50% 50%), image-set("../../images/bg-promo-desktop@1x.webp" 1x type("image/webp"), "../../images/bg-promo-desktop@2x.webp" 2x type("image/webp"));
+    width: 245px;
+    padding: 56px 42px 43px;
+  }
+
+  .promo__text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: calc(20/16);
+    margin: 0 auto;
+    align-items: center;
+    width: 161px;
+    text-align: center;
+
+    &::before {
+      background-size: 80px 83px;
+      width: 80px;
+      height: 83px;
+      margin: 0 auto 46px;
+    }
+  }
 }

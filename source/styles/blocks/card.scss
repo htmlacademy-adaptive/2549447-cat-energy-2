@@ -1,8 +1,51 @@
+.card {
+  border-top: 1px solid $color-accent-5;
+  width: 100%;
+
+  &:last-child {
+    border-bottom: 1px solid $color-accent-5;
+  }
+
+  .wrapper {
+    width: 280px;
+  }
+}
+
+.card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  row-gap: 14px;
+  padding: 20px 0 25px;
+}
+
+.card__link {
+  display: flex;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 107px;
+}
+
 .card__link-title {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
   text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__title {
+  max-width: 95px;
   font-size: 16px;
   line-height: calc(20/16);
   text-transform: uppercase;
@@ -11,13 +54,102 @@
 }
 
 .card__characteristic {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   font-size: 12px;
   line-height: calc(16/12);
+  margin: 0;
+}
+
+.card__characteristic-number {
+  margin-left: auto;
+}
+
+.card__button {
+  grid-column: -1 / 1;
 }
 
 @media (min-width: $tablet-width) {
   .card {
     min-height: 511px;
     background-image: linear-gradient($color-contrast-text 81px, $color-bg-primary 81px);
+    border: none;
+
+    .wrapper {
+      width: auto;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .card__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 37px 40px;
+    row-gap: 20px;
+    min-height: 100%;
+    box-sizing: border-box;
+  }
+
+  .card__link {
+    width: 200px;
+    height: 210px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: calc(24/20);
+    max-width: 135px;
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  .card__characteristic {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: calc(20/16);
+    width: 100%;
+    row-gap: 7px;
+  }
+
+  .card__characteristic-term {
+    &::after {
+      content: "";
+      display: block;
+      background-color: $color-accent-4;
+      width: 200%;
+      height: 1px;
+      margin-top: 4px;
+    }
+  }
+
+  .card__button {
+    margin-top: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__wrapper {
+    row-gap: 12px;
+  }
+
+  .card__title {
+    margin-bottom: 13px;
+  }
+
+  .card__link {
+    width: 169px;
   }
 }

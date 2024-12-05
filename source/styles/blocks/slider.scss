@@ -1,0 +1,71 @@
+.slider {
+  display: grid;
+  --range: 0.5;
+  grid-template-columns: calc(var(--range) * 100%) auto calc((1 - var(--range)) * 100%);
+  aspect-ratio: 280 / 256;
+  width: min(100%, 560px);
+}
+
+.slider__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  &--before {
+    object-position: left;
+  }
+
+  &--after {
+    object-position: right;
+  }
+}
+
+.slider__range {
+  display: grid;
+  z-index: 1;
+  color: $text-color-accent-3;
+  cursor: col-resize;
+  background-color: currentColor;
+  border-radius: 2px;
+  place-items: center;
+  width: 4px;
+  height: 100%;
+  margin: 0 -2px;
+  transition: color 0.2s, opacity 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-accent;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.slider__button {
+  box-sizing: border-box;
+  display: grid;
+  margin: -18px;
+  width: 40px;
+  height: 40px;
+  color: inherit;
+  border: 2px solid currentColor;
+  border-radius: 20px;
+  background-color: $color-contrast-text;
+  cursor: col-resize;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: currentColor;
+    mask-image: url("../../icons/stack.svg#button-slider");
+  }
+
+  &:focus-visible::before {
+    color: $color-accent;
+  }
+}

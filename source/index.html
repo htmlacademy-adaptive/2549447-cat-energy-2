@@ -25,10 +25,10 @@
     <a class="header__logo-text logo-text" tabindex="-1" href="index.html">
       <img class="logo-text_picture" src="images/logo-cat-energy-text.svg" alt="Текстовый вариант логотипа Cat Energy" width="101" height="18">
     </a>
-    <button class="header__toggle button-toggle" type="button">
+    <button class="header__toggle button-toggle button-toggle--nojs" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="navigation navigation--close">
+    <nav class="navigation navigation--open navigation--nojs">
       <ul class="navigation__list menu">
         <li class="menu__item">
           <a class="menu__link menu__link--accent menu__link--current" href="index.html" aria-current="page">Главная</a>
@@ -55,7 +55,7 @@
           <source type="image/png" media="(min-width: 768px)" srcset="images/intro-cat-energy-tablet@1x.png 1x, images/intro-cat-energy-tablet@2x.png 2x" width="709" height="609">
           <img class="intro_picture" src="images/intro-cat-energy-mobile@1x.png" srcset="images/intro-cat-energy-mobile@2x.png 2x" alt="Баночка корма Car Energy" width="280" height="270">
         </picture>
-        <a class="intro__button button" href="#">Подобрать программу</a>
+        <a class="intro__button button button--primary" href="#">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
@@ -86,14 +86,14 @@
           <p class="advantages__description advantages__description--change">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="advantages__item">
-          <p class="advantages__description advantages__description--improvement">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="advantages__description advantages__description--improvement">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
         </li>
       </ul>
     </section>
     <section class="stats">
       <div class="stats__wrapper wrapper">
         <h2 class="stats__title">Живой пример</h2>
-        <p class="stats__description">Борис сбросил 5&nbsp;кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <p class="stats__description">Борис сбросил 5&nbsp;кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <dl class="stats__list">
           <div class="stats__item">
             <dt class="stats__term">Снижение веса</dt>
@@ -103,38 +103,51 @@
             <dt class="stats__term">Затрачено времени</dt>
             <dd class="stats__number">60&nbsp;дней</dd>
           </div>
-          <div class="stats__item stats__item--up">
-            <dt class="stats__term stats__term--up">Затраты на питание:</dt>
-            <dd class="stats__number stats__number--up">15&nbsp;000&nbsp;руб.</dd>
+          <div class="stats__item stats__item-up">
+            <dt class="stats__term-up">Затраты на питание:</dt>
+            <dd class="stats__number-up">15&nbsp;000&nbsp;руб.</dd>
           </div>
         </dl>
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/slider-fat-cat-tablet@1x.webp 1x, images/slider-fat-cat-tablet@2x.webp 2x" width="560" height="512">
-          <source type="image/webp" srcset="images/slider-fat-cat-mobile@1x.webp 1x, images/slider-fat-cat-mobile@2x.webp 2x" width="280" height="256">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/slider-fat-cat-tablet@1x.png 1x, images/slider-fat-cat-tablet@2x.png 2x" width="560" height="512">
-          <img class="stats_slider-image-before" src="images/slider-fat-cat-mobile@1x.png" srcset="images/slider-fat-cat-mobile@2x.png 2x" alt="Пухлый котик" width="280" height="256">
-        </picture>
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/slider-slim-cat-tablet@1x.webp 1x, images/slider-slim-cat-tablet@2x.webp 2x" width="560" height="512">
-          <source type="image/webp" srcset="images/slider-slim-cat-mobile@1x.webp 1x, images/slider-slim-cat-mobile@2x.webp 2x" width="280" height="256">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/slider-slim-cat-tablet@1x.png 1x, images/slider-slim-cat-tablet@2x.png 2x" width="560" height="512">
-          <img class="stats_slider-image-after" src="images/slider-slim-cat-mobile@1x.png" srcset="images/slider-slim-cat-mobile@2x.png 2x" alt="Котик без лишнего веса" width="280" height="256">
-        </picture>
+        <div class="stats__slider slider">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/slider-fat-cat-tablet@1x.webp 1x, images/slider-fat-cat-tablet@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="images/slider-fat-cat-mobile@1x.webp 1x, images/slider-fat-cat-mobile@2x.webp 2x" width="280" height="256">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/slider-fat-cat-tablet@1x.png 1x, images/slider-fat-cat-tablet@2x.png 2x" width="560" height="512">
+            <img class="slider__image slider__image--before" src="images/slider-fat-cat-mobile@1x.png" srcset="images/slider-fat-cat-mobile@2x.png 2x" alt="Пухлый котик" width="280" height="256">
+          </picture>
+          <div class="slider__range">
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Посмотри, как поменялся котик!</span>
+            </button>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/slider-slim-cat-tablet@1x.webp 1x, images/slider-slim-cat-tablet@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="images/slider-slim-cat-mobile@1x.webp 1x, images/slider-slim-cat-mobile@2x.webp 2x" width="280" height="256">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/slider-slim-cat-tablet@1x.png 1x, images/slider-slim-cat-tablet@2x.png 2x" width="560" height="512">
+            <img class="slider__image slider__image--after" src="images/slider-slim-cat-mobile@1x.png" srcset="images/slider-slim-cat-mobile@2x.png 2x" alt="Котик без лишнего веса" width="280" height="256">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="address">
       <div class="address__wrapper wrapper">
         <h2 class="address__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-        <p class="address__text">ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</p>
+        <div class="address__description-wrapper">
+          <p class="address__text">ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8</p>
+          <p class="address__text">Санкт-Петербург</p>
+        </div>
       </div>
-      <picture>
-        <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-reserve-desktop@1x.webp 1x, images/map-reserve-desktop@2x.webp 2x" width="1440" height="400">
-        <source type="image/webp" media="(min-width: 768px)" srcset="images/map-reserve-tablet@1x.webp 1x, images/map-reserve-tablet@2x.webp 2x" width="768" height="400">
-        <source type="image/webp" srcset="images/map-reserve-mobile@1x.webp 1x, images/map-reserve-mobile@2x.webp 2x" width="320" height="362">
-        <source type="image/jpg" media="(min-width: 1440px)" srcset="images/map-reserve-desktop@1x.jpg 1x, images/map-reserve-desktop@2x.jpg 2x" width="1440" height="400">
-        <source type="image/jpg" media="(min-width: 768px)" srcset="images/map-reserve-tablet@1x.jpg 1x, images/map-reserve-tablet@2x.jpg 2x" width="768" height="400">
-        <img class="address_map-reserve-image" src="images/map-reserve-mobile@1x.jpg" srcset="images/map-reserve-mobile@2x.jpg 2x" alt="Карта с отмеченной локацией магазина Cat Energy" width="320" height="362">
-      </picture>
+      <div class="map-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-reserve-desktop@1x.webp 1x, images/map-reserve-desktop@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/map-reserve-tablet@1x.webp 1x, images/map-reserve-tablet@2x.webp 2x" width="768" height="400">
+          <source type="image/webp" srcset="images/map-reserve-mobile@1x.webp 1x, images/map-reserve-mobile@2x.webp 2x" width="320" height="362">
+          <source type="image/jpg" media="(min-width: 1440px)" srcset="images/map-reserve-desktop@1x.jpg 1x, images/map-reserve-desktop@2x.jpg 2x" width="1440" height="400">
+          <source type="image/jpg" media="(min-width: 768px)" srcset="images/map-reserve-tablet@1x.jpg 1x, images/map-reserve-tablet@2x.jpg 2x" width="768" height="400">
+          <img class="map-wrapper__map-reserve-image" src="images/map-reserve-mobile@1x.jpg" srcset="images/map-reserve-mobile@2x.jpg 2x" alt="Карта с отмеченной локацией магазина Cat Energy" width="320" height="362">
+        </picture>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787672858!2d30.32047247760289!3d59.938716474915154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1733145417354!5m2!1sru!2sru" width="320" height="362" tabindex="-1"></iframe>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -164,7 +177,8 @@
       </section>
       <section class="footer__developer developer">
         <h2 class="visually-hidden">Разработано в:</h2>
-        <a class="developer__link" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="developer__link" href="https://htmlacademy.ru">
+          <span class="developer__name">HTML Academy</span></a>
       </section>
     </div>
   </footer>

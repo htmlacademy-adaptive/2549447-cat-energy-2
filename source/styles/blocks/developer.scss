@@ -5,17 +5,47 @@
   line-height: calc(20/16);
   text-decoration: none;
   color: $text-color-base;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &::after {
+    content: "";
+    background-color: $text-color-accent-3;
+    mask-image: url("../../icons/stack.svg#icon-htmlacademy");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    width: 27px;
+    height: 34px;
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $color-accent;
+  }
+
+  &:active::after {
+    background-color: $color-accent;
+  }
 }
 
-.developer__link::after {
-  content: "";
-  background-color: $text-color-accent-3;
-  mask-image: url("../../icons/stack.svg#icon-htmlacademy");
-  mask-repeat: no-repeat;
-  mask-size: 27px 34px;
-  width: 27px;
-  height: 34px;
-  display: block;
-  cursor: pointer;
-  margin-left: auto;
+@media (min-width: $tablet-width) {
+  .developer__link {
+    justify-content: end;
+    width: 170px;
+    padding: 15px 0;
+  }
+
+  .developer__link::after {
+    margin-left: 23px;
+  }
 }

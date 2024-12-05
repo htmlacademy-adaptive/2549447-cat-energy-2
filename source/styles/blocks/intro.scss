@@ -1,30 +1,41 @@
 .intro {
   font-family: $font-secondary;
-  background-image: linear-gradient($color-accent-transparent 302px, $color-contrast-text 302px);
+  background-color: $color-accent-transparent;
+  background-image: linear-gradient($color-accent-transparent 61%, $color-contrast-text 61%), image-set("../../images/intro-bg-licking-cat-mobile@1x.webp" 1x type("image/webp"), "../../images/intro-bg-licking-cat-mobile@2x.webp" 2x type("image/webp")), linear-gradient(to right, #4e4d51 50%, #414045 50%);
   color: $color-contrast-text;
+  background-repeat: no-repeat;
+  background-size: contain, 490px 302px, contain;
+  background-position: 50% 0;
+  text-align: center;
 }
 
 .intro__wrapper {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding-top: 27px;
+  padding-bottom: 20px;
 }
 
 .intro__title {
   font-size: 36px;
   line-height: 1;
   font-weight: inherit;
+  text-align: start;
 }
 
 .intro__slogan {
-  font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 29px;
+  text-align: start;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
     background-image: none;
+    background-color: transparent;
   }
 
   .intro__wrapper {
@@ -56,6 +67,8 @@
     max-width: 244px;
     margin-left: 90px;
     margin-bottom: 550px;
+    font-size: 20px;
+    line-height: calc(26/20);
   }
 }
 
@@ -66,17 +79,21 @@
 
   .intro::before {
     content: "";
-    background-image: linear-gradient(to right, $color-contrast-text 50%, $color-accent-transparent 50%);
+    background-image: linear-gradient($color-accent-transparent, $color-accent-transparent), image-set("../../images/intro-bg-licking-cat-desktop@1x.webp" 1x type("image/webp"), "../../images/intro-bg-licking-cat-desktop@2x.webp" 2x type("image/webp")), linear-gradient(to right, #403f45, #403f45);
     display: block;
-    width: 100%;
+    width: 50%;
     height: 694px;
     position: absolute;
     top: 0;
     z-index: -1;
+    background-repeat: no-repeat;
+    margin-left: 720px;
+    right: 0;
   }
 
   .intro__wrapper {
-    min-height: 550px;
+    min-height: 545px;
+    padding: 0;
   }
 
   .intro__title {

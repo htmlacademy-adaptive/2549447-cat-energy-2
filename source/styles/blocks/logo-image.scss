@@ -4,4 +4,13 @@
 
 .logo-image_picture {
   display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
