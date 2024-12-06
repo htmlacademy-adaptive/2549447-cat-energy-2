@@ -1,0 +1,34 @@
+.accent-line {
+  position: relative;
+  width: fit-content;
+  box-shadow: -40px 0 0 0 $color-contrast-text, 40px 0 0 0 $color-contrast-text;
+  background: $color-contrast-text;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background: $color-accent;
+    box-shadow: 100vw 0 0 0 $color-accent;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .accent-line {
+    &::before {
+      top: 14px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .accent-line {
+    &::before {
+      top: 18px;
+    }
+  }
+}

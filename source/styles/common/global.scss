@@ -1,1 +1,10 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-primary;
+  background-color: $color-contrast-text;
+  color: $text-color-base;
+  font-size: 14px;
+  line-height: calc(18/14);
+  min-height: 100vh;
+}

@@ -1,0 +1,28 @@
+.input {
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: calc(3/2);
+  color: $text-color-base;
+  height: 56px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid $color-accent-7;
+
+  &:hover {
+    border-color: $color-accent-4;
+  }
+
+  &:focus-visible {
+    border: solid 2px $text-color-base;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  &:user-invalid {
+    border: solid 2px $color-accent-error;
+  }
+}

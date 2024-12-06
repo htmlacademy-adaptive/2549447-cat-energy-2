@@ -1,0 +1,32 @@
+.map-wrapper {
+  position: relative;
+
+  :where(iframe) {
+    position: absolute;
+    display: block;
+    border: none;
+    top: 0;
+    width: 100%;
+    height: 362px;
+    z-index: 1;
+  }
+}
+
+.map-wrapper__map-reserve-image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .map-wrapper {
+    :where(iframe) {
+      height: 400px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map-wrapper {
+    grid-area: 1 / 1 / -1 / -1;
+  }
+}

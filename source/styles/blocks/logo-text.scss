@@ -1,0 +1,21 @@
+.logo-text {
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.logo-text_picture {
+  display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .logo-text_picture {
+    width: 118px;
+    height: 21px;
+  }
+}

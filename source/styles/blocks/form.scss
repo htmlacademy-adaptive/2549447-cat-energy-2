@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 256px;
+    gap: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    gap: 0;
+    width: 752px;
+    margin: 0 auto;
+  }
+}
