@@ -1,7 +1,7 @@
 .intro {
   font-family: $font-secondary;
   background-color: $color-accent-transparent;
-  background-image: linear-gradient($color-accent-transparent 61%, $color-contrast-text 61%), image-set("../images/intro-bg-licking-cat-mobile@1x.webp" 1x type("image/webp"), "../images/intro-bg-licking-cat-mobile@2x.webp" 2x type("image/webp")), linear-gradient(to right, #4e4d51 50%, #414045 50%);
+  background-image: linear-gradient($color-accent-transparent 60%, $color-contrast-text 60%), image-set("../images/intro-bg-licking-cat-mobile@1x.webp" 1x type("image/webp"), "../images/intro-bg-licking-cat-mobile@2x.webp" 2x type("image/webp")), linear-gradient(to right, #4e4d51 50%, #414045 50%);
   color: $color-contrast-text;
   background-repeat: no-repeat;
   background-size: contain, 490px 302px, contain;
@@ -21,7 +21,6 @@
   font-size: 36px;
   line-height: 1;
   font-weight: inherit;
-  text-align: start;
 }
 
 .intro__slogan {
@@ -29,7 +28,10 @@
   text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 29px;
-  text-align: start;
+}
+
+.intro__button {
+  margin-top: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,13 +50,15 @@
     max-width: 420px;
     margin-left: 90px;
     margin-bottom: 40px;
+    text-align: start;
   }
 
   .intro__slogan {
     color: $text-color-accent;
     font-size: 20px;
     max-width: 420px;
-    margin: 0 auto 50px 90px;
+    margin: 0 auto 49px 90px;
+    text-align: start;
   }
 
   .intro_picture {
@@ -65,16 +69,16 @@
 
   .intro__button {
     max-width: 244px;
-    margin-left: 90px;
-    margin-bottom: 550px;
+    margin: 0 0 506px 90px;
     font-size: 20px;
     line-height: calc(26/20);
+    padding: 14px 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    margin-bottom: 82px;
+    margin-bottom: 88px;
   }
 
   .intro::before {
@@ -98,17 +102,24 @@
 
   .intro__title {
     margin-top: 81px;
+    margin-left: 80px;
+  }
+
+  .intro__slogan {
+    margin-left: 80px;
+    margin-bottom: 52px;
   }
 
   .intro_picture {
+    height: 499px;
     z-index: 1;
     top: 0;
-    left: 450px;
+    left: 447px;
   }
 
   .intro__button {
     max-width: 244px;
-    margin-left: 90px;
+    margin-left: 80px;
     margin-bottom: auto;
   }
 }

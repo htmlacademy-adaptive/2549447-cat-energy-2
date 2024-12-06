@@ -11,6 +11,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -43,7 +45,7 @@
     </nav>
   </header>
   <main class="main">
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="catalog__wrapper wrapper">
         <h1 class="catalog__title">Каталог продукции</h1>
         <div class="catalog__list-wrapper">
@@ -241,7 +243,7 @@
         </div>
       </div>
     </section>
-    <section class="sub-product wrapper">
+    <section class="sub-product wrapper" data-test="additional">
       <h2 class="sub-product__title accent-line">Дополнительные товары</h2>
       <div class="sub-product__container">
         <ul class="sub-product__list">

@@ -41,7 +41,8 @@
   .navigation__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 33px;
+    gap: 34px;
+    padding-right: 5px;
   }
 
   .navigation__toggle {
@@ -51,6 +52,7 @@
 
 @media (min-width: $desktop-width) {
   .navigation__list {
+    padding: 0;
     background-color: transparent;
   }
 }

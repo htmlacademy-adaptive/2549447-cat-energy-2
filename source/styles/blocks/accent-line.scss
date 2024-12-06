@@ -20,7 +20,15 @@
 @media (min-width: $tablet-width) {
   .accent-line {
     &::before {
-      top: 16px;
+      top: 14px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .accent-line {
+    &::before {
+      top: 18px;
     }
   }
 }

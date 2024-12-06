@@ -61,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    margin-bottom: 47px;
+    margin-bottom: 46px;
   }
 
   .advantages__title {
@@ -73,7 +73,7 @@
   .advantages__list {
     display: flex;
     flex-flow: wrap;
-    gap: 37px 135px;
+    gap: 37px 134px;
     margin: 0 auto;
   }
 
@@ -117,6 +117,10 @@
   }
 
   .advantages__list {
-    column-gap: 73px;
+    column-gap: 80px;
+  }
+
+  .advantages__item {
+    width: 245px;
   }
 }

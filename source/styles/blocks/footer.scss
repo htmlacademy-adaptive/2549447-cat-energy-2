@@ -51,3 +51,9 @@
     margin-top: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer {
+    min-height: 169px;
+  }
+}

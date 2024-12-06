@@ -1,5 +1,5 @@
 .catalog {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .catalog__wrapper {
@@ -30,6 +30,7 @@
   .catalog {
     width: calc($tablet-width - 60px);
     margin: 0 auto 74px;
+    padding-top: 26px;
   }
 
   .catalog__wrapper {
@@ -62,6 +63,7 @@
   .catalog {
     width: calc($desktop-width - 220px);
     margin: 0 auto 71px;
+    padding-top: 45px;
   }
 
   .catalog__list-wrapper {
@@ -72,6 +74,6 @@
 
   .catalog__list {
     grid-template-columns: repeat(4, 245px);
-    gap: 80px;
+    gap: 63px 80px;
   }
 }

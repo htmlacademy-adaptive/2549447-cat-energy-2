@@ -1,10 +1,10 @@
 .programs {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .programs__list {
   display: flex;
-  gap: 20px;
+  gap: 21px;
   flex-direction: column;
   list-style-type: none;
   margin: 0 auto;
@@ -47,7 +47,8 @@
   background-size: 68px 50px;
   width: 68px;
   height: 50px;
-  left: -7px;
+  left: -9px;
+  top: -6px;
   z-index: 2;
 }
 
@@ -77,7 +78,7 @@
   width: fit-content;
   min-height: 24px;
   box-sizing: border-box;
-  padding: 10px 0;
+  padding: 8px 0;
 
   &:active {
     opacity: 0.3;
@@ -94,7 +95,7 @@
     mask-image: url("../../icons/stack.svg#icon-arrow-right");
     mask-repeat: no-repeat;
     mask-size: 32px 12px;
-    mask-position: -8px;
+    mask-position: -6px;
     width: 32px;
     height: 12px;
     display: block;
@@ -109,11 +110,11 @@
 
 @media (min-width: $tablet-width) {
   .programs {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
 
   .programs__list {
-    gap: 30px;
+    gap: 29px;
   }
 
   .programs__item {
@@ -150,6 +151,7 @@
       background-size: 268px 200px;
       width: 268px;
       height: 200px;
+      right: 4px;
     }
   }
 
@@ -167,15 +169,23 @@
 
   .programs__button {
     grid-row: 3/4;
-    margin-top: 28px;
+    margin-top: 25px;
     min-height: 38px;
     font-size: 20px;
     line-height: 1.5;
     padding: 4px 0;
+
+    &::after {
+      margin-left: 24px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    margin-bottom: 71px;
+  }
+
   .programs__list {
     display: grid;
     grid-template-columns: repeat(2, 570px);
@@ -184,7 +194,7 @@
 
   .programs__item {
     display: block;
-    padding: 77px 67px 55px 52px;
+    padding: 77px 65px 55px 52px;
   }
 
   .programs__title {

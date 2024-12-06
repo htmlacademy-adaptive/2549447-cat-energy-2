@@ -21,7 +21,7 @@
 .stats__list {
   display: grid;
   grid-template-columns: repeat(2, 124px);
-  gap: 20px 32px;
+  gap: 19px 32px;
   margin: 0 0 20px;
 }
 
@@ -51,7 +51,7 @@
   text-transform: uppercase;
   color: $text-color-accent;
   margin: 0;
-  padding: 15px 5px 17px;
+  padding: 13px 5px 17px;
   box-sizing: border-box;
   width: 100%;
   text-align: center;
@@ -116,6 +116,7 @@
   .stats__list {
     display: flex;
     margin-bottom: 99px;
+    gap: 43px;
   }
 
   .stats__item {
@@ -125,7 +126,7 @@
   .stats__number {
     font-size: 30px;
     line-height: calc(37/30);
-    padding-bottom: 20px;
+    padding: 15px 5px 19px;
   }
 
   .stats__term {

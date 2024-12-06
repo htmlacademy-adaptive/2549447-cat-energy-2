@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+.subscribe__button {
+  padding: 15px 10px;
+}
+
 @media (min-width: $tablet-width) {
   .subscribe {
     padding: 0 40px;
@@ -44,6 +48,8 @@
   }
 
   .subscribe__title {
+    font-size: 40px;
+    line-height: 1;
     margin-bottom: 72px;
   }
 }

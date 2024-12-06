@@ -1,7 +1,7 @@
 .sub-card {
   display: flex;
   flex-direction: column;
-  padding: 13px 0 19px;
+  padding: 12px 0 18px;
   border-top: 1px solid $color-accent-4;
 
   &:last-child {
@@ -36,7 +36,7 @@
     row-gap: 21px;
     font-size: 32px;
     line-height: 1;
-    padding: 26px 38px 27px;
+    padding: 26px 38px 28px;
     border-left: 1px solid $color-accent-4;
     border-right: 1px solid $color-accent-4;
   }
@@ -49,12 +49,13 @@
   .sub-card__characteristic {
     font-size: 16px;
     line-height: calc(20/16);
-    margin: 4px 0 0;
+    margin: 3px 0 0;
     justify-content: end;
+    text-align: end;
   }
 
   .sub-card__characteristic-number {
-    margin-left: 50px;
+    min-width: 93px;
   }
 
   .sub-card__button {
@@ -64,7 +65,7 @@
 
 @media (min-width: $desktop-width) {
   .sub-card {
-    grid-template-columns: 316px 1fr 244px;
+    grid-template-columns: 316px auto 244px;
     border-right: none;
     border-left: none;
     padding: 15px 0 16px;
@@ -77,11 +78,13 @@
     display: grid;
     grid-template-columns: 233px 1fr;
     gap: 10px;
+    text-align: start;
   }
 
   .sub-card__characteristic-number {
     margin: 0;
-    max-width: 100%;
+    min-width: fit-content;
+    max-width: max-content;
   }
 
   .sub-card__button {

@@ -34,7 +34,7 @@
   .promo {
     background-image: linear-gradient($color-accent-transparent 50% 50%), image-set("../images/bg-promo-tablet@1x.webp" 1x type("image/webp"), "../images/bg-promo-tablet@2x.webp" 2x type("image/webp"));
     min-height: 200px;
-    padding: 57px 125px 60px 77px;
+    padding: 61px 125px 60px 78px;
   }
 
   .promo__text {
@@ -45,8 +45,7 @@
     width: 100%;
 
     &::before {
-      margin: 0;
-      margin-right: 264px;
+      margin: -3px 264px 0 0;
     }
   }
 }

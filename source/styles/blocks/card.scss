@@ -14,8 +14,8 @@
 .card__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  row-gap: 14px;
-  padding: 20px 0 25px;
+  row-gap: 5px;
+  padding: 20px 0 24px;
 }
 
 .card__link {
@@ -57,7 +57,7 @@
   display: grid;
   grid-template-columns: repeat(2, 50%);
   font-size: 12px;
-  line-height: calc(16/12);
+  line-height: 1;
   margin: 0;
 }
 
@@ -67,6 +67,7 @@
 
 .card__button {
   grid-column: -1 / 1;
+  margin-top: 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -146,10 +147,21 @@
   }
 
   .card__title {
+    margin-top: 0;
     margin-bottom: 13px;
   }
 
   .card__link {
     width: 169px;
+  }
+
+  .card__characteristic {
+    row-gap: 7px;
+  }
+
+  .card__characteristic-term {
+    &::after {
+      margin-top: 5px;
+    }
   }
 }

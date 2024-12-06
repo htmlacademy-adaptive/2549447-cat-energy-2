@@ -34,7 +34,9 @@
   }
 
   .menu__link {
-    margin-top: 4px;
+    font-size: 18px;
+    line-height: calc(24/18);
+    margin-top: 2px;
     height: 24px;
     padding: 8px 0;
 
@@ -46,6 +48,11 @@
 
 @media (min-width: $desktop-width) {
   .menu__link {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 11px 0;
+
     &--accent {
       color: $color-contrast-text;
       border-color: $color-contrast-text;
